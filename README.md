@@ -1,5 +1,6 @@
 # SchemeToX86Compiler
 a compiler programmed in ocaml. compiles scheme to x86 assembly.
+worked and ran it on a linux VM (ubuntu image).
 
 1. i run this compiler via UTOP.
 2. you need to execute the command '#use "compiler.ml";;' so you can use its methods.
