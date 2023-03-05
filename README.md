@@ -4,7 +4,7 @@ worked and ran it on a linux VM (ubuntu image).
 
 1. i run this compiler via UTOP.
 2. you need to execute the command '#use "compiler.ml";;' so you can use its methods.
-3. then you have a few options:
+3. then you'll have a few options:
   + to get the Reader's output (a s-expression AST) run the line 'Reader.nt_sexpr "<scheme_string>" 0'
   + to get the tag-parser's output (a scheme AST) run the line 'Tag_Parser.tag_parse (Reader.nt_sexpr "<scheme_string>" 0).found'
   + to get the semantic-analyser's output (a scheme AST with the addition of Lexical Environments, Tail Position Calls and Auto Boxing for variables that require it) run the line 'Semantic_Analysis.semantics (Tag_Parser.tag_parse (Reader.nt_sexpr "<scheme_string>" 0).found);;'
